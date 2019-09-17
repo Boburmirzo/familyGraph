@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>Wunderman Thompson Commerce Practical Coding Test 1</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+                color: #444;
+                font-size: 11pt;
+                padding: 30px 100px 50px;
+            }
+
+            h1 {
+                font-family: 'Roboto', 'Helvetica';
+                font-weight: normal;
+                color: rgb(35,209,217); border-bottom: 1px solid #999; }
+
+            h2 {
+                font-size: 110%;
+            }
+
+            .wunderman-thompson-commerce-logo {
+                height: 100px;
+                background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0ibWFzdGVyLWFydGJvYXJkIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTg0IiBoZWlnaHQ9IjY2NSI+PHBhdGggaWQ9ImVlLWJhY2tncm91bmQiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMCIgcG9pbnRlci1ldmVudHM9Im5vbmUiIGQ9Ik0wIDBoMTE4NHY2NjVIMHoiLz48ZGVmcz48c3R5bGUgaWQ9ImVlLWdvb2dsZS1mb250cyI+QGltcG9ydCB1cmwoaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PUZqYWxsYStPbmU6NDAwfFJvYm90bzoxMDAsMTAwaXRhbGljLDMwMCwzMDBpdGFsaWMsNDAwLDQwMGl0YWxpYyw1MDAsNTAwaXRhbGljLDcwMCw3MDBpdGFsaWMsOTAwLDkwMGl0YWxpYyk7PC9zdHlsZT48L2RlZnM+PHN3aXRjaCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTA4LjM0OCAtMTA4LjM2KSBzY2FsZSg0LjE3NDEyKSI+PGc+PHBhdGggZD0iTTAgMGgzMzUuNHYyMTEuM0gwVjB6IiBjbGFzcz0ic3QwIiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTUxLjkgMzUuN2gtOS43VjI2aC02LjV2OS43SDI2djYuNWg5Ljd2OS43aDYuNXYtOS43aDkuN3oiIGNsYXNzPSJzdDEiIGZpbGw9IiMwMGQxZGEiLz48cGF0aCBjbGFzcz0ic3QyIiBkPSJNMjA0LjIgODEuNXptMTUuNi0yMC42YzAtNC45LTQtOS05LTlIMjAxdjI5LjZoMy4zVjY5LjlIMjExLjdsNS4zIDExLjdoMy42TDIxNC43IDY5YzMtMS41IDUuMS00LjYgNS4xLTguMXptLTkgNS43aC02LjZWNTUuMmg2LjZjMy4xIDAgNS43IDIuNSA1LjcgNS43cy0yLjYgNS43LTUuNyA1Ljd6TTEwMyA3Mi41YzAgNC40LTMgNi4yLTYuNiA2LjItMy42IDAtNi42LTEuOC02LjYtNi4yVjUxLjloLTMuM3YyMC42YzAgNS44IDQgOS40IDkuOSA5LjQgNS44IDAgOS45LTMuNiA5LjktOS40VjUxLjlIMTAzdjIwLjZ6bS0zMC45IDIuMmwtNC40LTIyLjhoLTRsLTQuNCAyMi44LTQuMS0yMi44aC0zLjNsNS43IDI5LjZoMy41bDQuNy0yMi45IDQuNyAyMi45SDc0bDUuNy0yOS42aC0zLjNsLTQuMyAyMi44em0xMTIuNCAxOS44aC05Ljh2MjkuNmgzLjN2LTExLjZoNi42YzQuOSAwIDktNCA5LTktLjEtNS00LjEtOS05LjEtOXptMCAxNC43SDE3OFY5Ny44aDYuNmMzLjEgMCA1LjcgMi41IDUuNyA1LjdzLTIuNyA1LjctNS44IDUuN3ptLTYuNSAxNC45em04OS45LTcyLjJsLTkuNSAyOS42aDMuNWwyLjItNi44aDExLjJsMi4yIDYuOGgzLjVsLTkuNS0yOS42aC0zLjZ6bS0yLjggMTkuNWw0LjYtMTQuMiA0LjYgMTQuMmgtOS4yem0tMjUuNiAyMi43Yy01LjMgMC05LjYgNC4zLTkuNiA5LjZ2MTEuMmMwIDUuMyA0LjMgOS42IDkuNiA5LjZzOS42LTQuMyA5LjYtOS42di0xMS4yYzAtNS4zLTQuMy05LjYtOS42LTkuNnptNi4zIDIwLjhjMCAzLjUtMi44IDYuMy02LjMgNi4zcy02LjMtMi44LTYuMy02LjN2LTExLjJjMC0zLjUgMi44LTYuMyA2LjMtNi4zczYuMyAyLjggNi4zIDYuM3YxMS4yek0xMjUuNiA5NC4xYy01LjMgMC05LjYgNC4zLTkuNiA5LjZ2MTEuMmMwIDUuMyA0LjMgOS42IDkuNiA5LjZzOS42LTQuMyA5LjYtOS42di0xMS4yYzAtNS4zLTQuMy05LjYtOS42LTkuNnptNi4zIDIwLjhjMCAzLjUtMi44IDYuMy02LjMgNi4zcy02LjMtMi44LTYuMy02LjN2LTExLjJjMC0zLjUgMi44LTYuMyA2LjMtNi4zczYuMyAyLjggNi4zIDYuM3YxMS4yem0uMy00MC4ybC0xMy40LTIyLjhoLTMuMXYyOS42aDMuM1Y1OC43bDEzLjQgMjIuOGgzLjFWNTEuOWgtMy4zdjIyLjh6bTE3NC0yMi44djIyLjhsLTEzLjQtMjIuOGgtMy4xdjI5LjZoMy4zVjU4LjdsMTMuNCAyMi44aDMuMVY1MS45aC0zLjN6bS0zMCA2NS40bC0xMy40LTIyLjhoLTMuMXYyOS42aDMuM3YtMjIuOGwxMy40IDIyLjhoMy4xVjk0LjVoLTMuM3YyMi44ek0xNjQuMyA3MS45VjYxLjVjMC01LjMtNC4zLTkuNi05LjYtOS42aC05Ljh2MjkuNmg5LjhjNS4zIDAgOS42LTQuMyA5LjYtOS42em0tMTYuMS0xNi43aDYuNmMzLjUgMCA2LjMgMi44IDYuMyA2LjN2MTAuNGMwIDMuNS0yLjggNi4zLTYuMyA2LjNoLTYuNnYtMjN6bTQ0LjEgMjNoLTE0Ljh2LTkuOWgxMy4yVjY1aC0xMy4ydi05LjhoMTQuOHYtMy4zaC0xOC4xdjI5LjZoMTguMXYtMy4zem00Ny4yLTExLjdsLTcuNC0xNC42aC0zLjR2MjkuNmgzLjNWNTguN2w2LjUgMTNoMi4xbDYuNS0xM3YyMi44aDMuM1Y1MS45SDI0N2wtNy41IDE0LjZ6TTUzLjYgOTcuOGgxMC42djI2LjNoMy4zVjk3LjhINzh2LTMuM0g1My42djMuM3ptNDkuMyA5LjlIOTBWOTQuNWgtMy4zdjI5LjZIOTBWMTExaDEyLjl2MTMuMWgzLjNWOTQuNWgtMy4zdjEzLjJ6bTExMCAwbC00LjctMS45Yy0zLjItMS4zLTMuNi0yLjgtMy42LTQuMSAwLTEuMi41LTIuMiAxLjMtMi45IDEuMS0uOSAyLjctMS40IDQuNi0xLjQgMS45IDAgMy41LjUgNC42IDEuNCAxIC45IDEuNSAyLjEgMS41IDMuNnYuNWgzLjN2LS41YzAtNS4xLTMuOC04LjMtOS4zLTguMy01LjUgMC05LjIgMy4xLTkuMiA3LjYgMCA0IDIuOCA2LjEgNi4yIDcuNGw0LjIgMS43YzQuMSAxLjYgNS4yIDIuNyA1LjIgNS4yIDAgMS42LS41IDIuOC0xLjYgMy44LTEuMiAxLTIuOSAxLjUtNSAxLjVzLTMuOS0uNS01LjEtMS41Yy0xLS45LTEuNi0yLTEuNi0zLjV2LS43aC0zLjN2LjdjMCA1LjEgNC4xIDguMyA5LjkgOC4zIDUuOCAwIDkuOS0zLjQgOS45LTguNiAwLTUuMi0zLjgtNi45LTcuMy04LjN6bS01OC4zIDEuNGwtNy40LTE0LjZoLTMuNHYyOS42aDMuM3YtMjIuOGw2LjUgMTNoMi4xbDYuNS0xM3YyMi44aDMuM1Y5NC41SDE2MmwtNy40IDE0LjZ6IiBmaWxsPSIjMGE0N2VkIi8+PGc+PHBhdGggY2xhc3M9InN0MSIgZD0iTTY5LjQgMTc1LjRoMy4zdi45YzAgMi43LS45IDQuOS0yLjYgNi41LTEuOCAxLjYtNCAyLjQtNi45IDIuNC0yLjkgMC01LjItLjktNy0yLjYtMS44LTEuNy0yLjctNC0yLjctNi45di0xMS41YzAtMi45LjktNS4yIDIuNi02LjkgMS44LTEuNyA0LjEtMi41IDctMi41IDIuOCAwIDUuMS44IDYuOSAyLjQgMS44IDEuNiAyLjYgMy44IDIuNiA2LjV2LjdoLTMuM3YtLjhjMC0xLjctLjYtMy4xLTEuNy00LjJzLTIuNi0xLjYtNC42LTEuNmMtMS45IDAtMy41LjYtNC42IDEuOC0xLjEgMS4yLTEuNyAyLjctMS43IDQuNVYxNzZjMCAxLjguNiAzLjMgMS43IDQuNSAxLjEgMS4yIDIuNiAxLjggNC42IDEuOCAxLjkgMCAzLjUtLjUgNC42LTEuNiAxLjEtMS4xIDEuNy0yLjQgMS43LTQuMnYtMS4xek05NC4xIDE3MXY1LjhjMCAyLjYtLjggNC43LTIuMyA2LjItMS41IDEuNS0zLjYgMi4zLTYuMSAyLjMtMi41IDAtNC41LS44LTYuMS0yLjMtMS41LTEuNS0yLjMtMy42LTIuMy02LjJWMTcxYzAtMi42LjgtNC43IDIuMy02LjIgMS41LTEuNSAzLjUtMi4zIDYuMS0yLjMgMi41IDAgNC41LjggNi4xIDIuMyAxLjUgMS41IDIuMyAzLjYgMi4zIDYuMnptLTEzLjUtLjJ2Ni4zYzAgMS42LjQgMi45IDEuMyAzLjlzMi4xIDEuNSAzLjcgMS41IDIuOC0uNSAzLjctMS41Yy45LTEgMS4zLTIuMyAxLjMtMy45di02LjNjMC0xLjYtLjQtMi45LTEuMy0zLjlzLTIuMS0xLjUtMy43LTEuNS0yLjguNS0zLjcgMS41Yy0uOCAxLTEuMyAyLjMtMS4zIDMuOXpNMTAyLjQgMTg0LjloLTMuM3YtMjJoMi41bC40IDIuNmMxLjQtMiAzLjQtMy4xIDUuOS0zLjEgMy4yIDAgNS40IDEuMyA2LjYgNCAxLjMtMi42IDMuNC00IDYuNC00IDIuMyAwIDQuMi43IDUuNSAyLjIgMS4zIDEuNCAyIDMuNCAyIDUuOXYxNC40aC0zLjN2LTE0LjRjMC0xLjUtLjQtMi43LTEuMi0zLjYtLjgtMS0yLTEuNC0zLjUtMS40cy0yLjcuNS0zLjYgMS41Yy0uOSAxLTEuNCAyLjItMS40IDMuN1YxODVoLTMuM3YtMTQuNGMwLTEuNS0uNC0yLjctMS4yLTMuNi0uOC0xLTItMS40LTMuNS0xLjRzLTIuNy41LTMuNiAxLjVjLS45IDEtMS40IDIuMy0xLjQgMy44djE0ek0xMzcuMiAxODQuOWgtMy4zdi0yMmgyLjVsLjQgMi42YzEuNC0yIDMuNC0zLjEgNS45LTMuMSAzLjIgMCA1LjQgMS4zIDYuNiA0IDEuMy0yLjYgMy40LTQgNi40LTQgMi4zIDAgNC4yLjcgNS41IDIuMiAxLjMgMS40IDIgMy40IDIgNS45djE0LjRoLTMuM3YtMTQuNGMwLTEuNS0uNC0yLjctMS4yLTMuNi0uOC0xLTItMS40LTMuNS0xLjRzLTIuNy41LTMuNiAxLjVjLS45IDEtMS40IDIuMi0xLjQgMy43VjE4NWgtMy4zdi0xNC40YzAtMS41LS40LTIuNy0xLjItMy42LS44LTEtMi0xLjQtMy41LTEuNHMtMi43LjUtMy42IDEuNWMtLjkgMS0xLjQgMi4zLTEuNCAzLjh2MTR6TTE4MS41IDE3Ny41aDMuMXYuM2MwIDIuMy0uOCA0LjEtMi4yIDUuNC0xLjUgMS4zLTMuNSAyLTUuOSAyLTIuNSAwLTQuNS0uNy02LjEtMi4yLTEuNS0xLjUtMi4zLTMuNS0yLjMtNnYtNmMwLTIuNi44LTQuNyAyLjMtNi4yIDEuNS0xLjUgMy41LTIuMyA2LjEtMi4zIDIuNCAwIDQuNC44IDUuOSAyLjMgMS41IDEuNSAyLjIgMy42IDIuMiA2LjJ2My4zaC0xMy4ydjMuMWMwIDEuNS41IDIuNyAxLjQgMy43LjkgMSAyLjIgMS41IDMuOCAxLjUgMS42IDAgMi45LS40IDMuNy0xLjMuOS0uOSAxLjMtMiAxLjMtMy4zdi0uNXptLTEwLjItNi44djEuMWgxMC4xdi0xLjFjMC0xLjYtLjQtMi45LTEuMy00LS45LTEtMi4xLTEuNS0zLjctMS41cy0yLjguNS0zLjggMS41Yy0uOCAxLTEuMyAyLjMtMS4zIDR6TTE5Mi44IDE4NC45aC0zLjN2LTIyaDIuNWwuNSAyLjhjMS4zLTIuMiAzLjMtMy4yIDUuOC0zLjIuMiAwIC42IDAgMS4xLjF2My4xYy0uNy0uMS0xLjItLjEtMS4zLS4xLTEuNiAwLTIuOS41LTMuOSAxLjVzLTEuNSAyLjMtMS41IDR2MTMuOHpNMjE2IDE3Ny4zaDMuMnYuNGMwIDIuNC0uOCA0LjItMi4yIDUuNi0xLjUgMS40LTMuNSAyLTYgMnMtNC41LS44LTYuMS0yLjNjLTEuNS0xLjUtMi4zLTMuNi0yLjMtNi4yVjE3MWMwLTIuNi44LTQuNyAyLjMtNi4yIDEuNS0xLjUgMy41LTIuMyA2LjEtMi4zIDIuNSAwIDQuNC43IDYgMi4xIDEuNSAxLjQgMi4zIDMuMiAyLjMgNS41di4zSDIxNnYtLjVjMC0xLjMtLjQtMi4zLTEuMy0zLjItLjktLjgtMi4xLTEuMy0zLjctMS4zcy0yLjguNS0zLjcgMS41Yy0uOSAxLTEuMyAyLjMtMS4zIDMuOXY2LjNjMCAxLjYuNCAyLjkgMS4zIDMuOXMyLjEgMS41IDMuNyAxLjUgMi45LS40IDMuNy0xLjNjLjktLjggMS4zLTEuOSAxLjMtMy4zdi0uNnpNMjM2LjggMTc3LjVoMy4xdi4zYzAgMi4zLS43IDQuMS0yLjIgNS40LTEuNSAxLjMtMy41IDItNS45IDItMi41IDAtNC41LS43LTYuMS0yLjItMS41LTEuNS0yLjMtMy41LTIuMy02di02YzAtMi42LjgtNC43IDIuMy02LjIgMS41LTEuNSAzLjUtMi4zIDYuMS0yLjMgMi40IDAgNC40LjggNS45IDIuMyAxLjUgMS41IDIuMiAzLjYgMi4yIDYuMnYzLjNoLTEzLjJ2My4xYzAgMS41LjUgMi43IDEuNCAzLjcuOSAxIDIuMiAxLjUgMy44IDEuNSAxLjYgMCAyLjktLjQgMy43LTEuMy45LS45IDEuMy0yIDEuMy0zLjN2LS41em0tMTAuMS02Ljh2MS4xaDEwLjJ2LTEuMWMwLTEuNi0uNC0yLjktMS4zLTQtLjktMS0yLjEtMS41LTMuNy0xLjVzLTIuOC41LTMuOCAxLjUtMS40IDIuMy0xLjQgNHoiIGZpbGw9IiMwMGQxZGEiLz48L2c+PC9nPjwvc3dpdGNoPjwvc3ZnPg==);
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                background-position-x: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="wunderman-thompson-commerce-logo">
+            </div>
+        </header>
+        <section>
+            <h1>Introduction</h1>
+            <p>Thanks for agreeing to undergo this test.  The test exercise is based around building a graph of people, and
+                their relationships with each other. We have designed this exercise to allow you to demonstrate your
+                java coding skills outside of the pressure of an interview environment</p>
+        </section>
+        <section>
+            <h1>Instructions</h1>
+
+            <p>Inside this zip file you will find a working gradle project structure with a build system, but no code in it.  All of the exercises will be based around these files.</p>
+            <p>If you aren't familiar with gradle you only need to know one command, <code>./gradlew clean test</code> (unix) or <code>gradlew clean test</code> (windows), to build and test your code from the command line, but your chosen IDE should be able to import the project, perform the build and run the tests for you.</p>
+
+            <h2>General guidance</h2>
+
+            <p>Your solution should be delivered as Java or Groovy code, and a set of tests written in Java or Groovy that validate your solution meets the requirements of the exercises.  These tests should automatically run when <code>./gradlew clean test</code> is run in the root of the project.</p>
+
+            <p>We are not looking for robust error checking in this exercise, we are looking for clean and concise code that reads the files exactly as they are presented, and performs the tasks specified.  More specifically we are looking for</p>
+            <ul>
+                <li>An in-memory only solution, no use of databases or other persistent state stores.</li>
+                <li>Neat, well structured and easily readable code</li>
+                <li>Good use of Object Orientated modelling - we want to see entities represented properly as objects.</li>
+                <li>Use of libraries and utility methods to save time and code</li>
+                <li>Well thought through algorithms</li>
+                <li>Comments to explain anything that you think needs further clarification</li>
+                <li>No cheeky shortcuts, for instance hard coding values or writing code that does not work in the general case!</li>
+            </ul>
+
+            <p>For the purposes of this test, to make your life easier we are <strong>not</strong> concerned about:</p>
+            <ul>
+                <li>Comprehensive javadoc</li>
+                <li>Good/comprehensive exception handling</li>
+            </ul>
+
+            <p>If you are unfamiliar with Gradle and you wish to use external libraries, please look in the file <code>build.gradle.kts</code>, where there are examples showing you how
+            to include Guava and Apache Commons Lang in your project.  You can easily use any library published in the JCenter repository by adding the details into the Gradle build file.</p>
+
+            <h2>Completing the exercises</h2>
+
+            <p>When all exercises are completed please zip up your whole solution, including all the gradle files.  We should be able to unzip and build, and test your answers by running <code>gradle clean test</code>.  For the avoidance of doubt, we will not consider your submission and it will not be evaluated unless this single command cleanly compiles your code, runs your tests and all of the tests pass.</p>
+
+            <h1>Exercises</h1>
+            <h2>Exercise 1</h2>
+            <p>
+                Please implement code and data structures that read the files
+                <ul>
+                    <li>src/test/java/resources/people.csv</li>
+                    <li>src/test/java/resources/relationships.csv</li>
+                </ul>
+                and use them to build an in-memory data structure that represents the people in the file and their relationships with each other.
+            </p>
+
+            <h2>Exercise 2 - Validate correct people loaded</h2>
+            <p>
+                Write a test to validate that you have loaded the expected number of people.
+            </p>
+
+            <h2>Exercise 3 - Validate correct relationships loaded</h2>
+            <p>
+                Write a test to validate that the following people have the correct expected number of connections to other people
+                <ul>
+                    <li>Bob (4 relationships)</li>
+                    <li>Jenny (3 relationships)</li>
+                    <li>Nigel (2 relationships)</li>
+                    <li>Alan (0 relationships)</li>
+                </ul>
+            </p>
+
+            <h2>Exercise 4 - Write a method that calculates the size of the extended family</h2>
+            <p>
+                Write a method which, when passed the object representing a particular person, returns an int representing
+                the size of their extended family including themselves.  Their extended family includes anyone connected to them by a chain of family relationships of any length, so your solution will need to work for arbitrarily deep extended families.  It should <strong>not</strong> count their friends.  Write tests that validate this returns the correct result for the families of:
+                <ul>
+                    <li>Jenny (4 family members)</li>
+                    <li>Bob (4 family members)</li>
+                </ul>
+            </p>
+
+        </section>
+    </body>
+</html>
